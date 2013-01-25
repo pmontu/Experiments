@@ -2,26 +2,33 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:WPFMediaKit="clr-namespace:WPFMediaKit.DirectShow.Controls;assembly=WPFMediaKit"
-        Title="MainWindow" Height="326.313" Width="338" Activated="Window_Activated_1">
+        Title="MainWindow" Activated="Window_Activated_1" Height="192" Width="292" SizeToContent="WidthAndHeight">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="282*"/>
-            <RowDefinition Height="37*"/>
+            <RowDefinition />
+            <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
         <WPFMediaKit:VideoCaptureElement x:Name="videoCapElement"
-                                 DesiredPixelWidth="320"
-                                 DesiredPixelHeight="240"
+                                 DesiredPixelWidth="1280"
+                                 DesiredPixelHeight="720"
                                          Stretch="None"
-                                 FPS="30" HorizontalAlignment="Left" VerticalAlignment="Top" Width="320" Height="240" />
+                                 FPS="30" 
+                                         HorizontalAlignment="Left" 
+                                         VerticalAlignment="Top" 
+                                         Width="1280" 
+                                         Height="720" />
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="362*"/>
-                <ColumnDefinition Width="155*"/>
+                <ColumnDefinition Width="114*"/>
+                <ColumnDefinition Width="85*"/>
+                <ColumnDefinition Width="85*"/>
             </Grid.ColumnDefinitions>
             <ComboBox x:Name="videoCapDevices"
      ItemsSource="{Binding Source={x:Static WPFMediaKit:MultimediaUtil.VideoInputDevices}}"
      DisplayMemberPath="Name" SelectionChanged="videoCapDevices_SelectionChanged" />
-            <Button Grid.Column="1" Click="Button_Click_1" Content="save snapshot" Grid.ColumnSpan="2" />
+            <ComboBox Grid.Column="1" x:Name="cbxResolution" Loaded="cbxResolution_Loaded" SelectionChanged="cbxResolution_SelectionChanged" >
+            </ComboBox>
+            <Button Grid.Column="2" Click="Button_Click_1" Content="save snapshot" />
         </Grid>
     </Grid>
 </Window>
