@@ -1,0 +1,183 @@
+C:\Users\ManojKumar\Desktop\ffmpeg-20130126-git-c46943e-win32-static\bin>ffmpeg
+-list_devices true -f dshow -i dummy
+ffmpeg version N-49352-gc46943e Copyright (c) 2000-2013 the FFmpeg developers
+  built on Jan 26 2013 12:06:49 with gcc 4.7.2 (GCC)
+  configuration: --enable-gpl --enable-version3 --disable-w32threads --enable-av
+isynth --enable-bzlib --enable-fontconfig --enable-frei0r --enable-gnutls --enab
+le-libass --enable-libbluray --enable-libcaca --enable-libfreetype --enable-libg
+sm --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --e
+nable-libopenjpeg --enable-libopus --enable-librtmp --enable-libschroedinger --e
+nable-libspeex --enable-libtheora --enable-libtwolame --enable-libvo-aacenc --en
+able-libvo-amrwbenc --enable-libvorbis --enable-libvpx --enable-libx264 --enable
+-libxavs --enable-libxvid --enable-zlib
+  libavutil      52. 17.100 / 52. 17.100
+  libavcodec     54. 91.100 / 54. 91.100
+  libavformat    54. 61.104 / 54. 61.104
+  libavdevice    54.  3.102 / 54.  3.102
+  libavfilter     3. 34.101 /  3. 34.101
+  libswscale      2.  2.100 /  2.  2.100
+  libswresample   0. 17.102 /  0. 17.102
+  libpostproc    52.  2.100 / 52.  2.100
+[dshow @ 0037a7c0] DirectShow video devices
+[dshow @ 0037a7c0]  "Logitech HD Webcam C310"
+[dshow @ 0037a7c0] DirectShow audio devices
+[dshow @ 0037a7c0]  "Microphone (HD Webcam C310)"
+[dshow @ 0037a7c0]  "Microphone (2- SB 5.1 VX)"
+[dshow @ 0037a7c0]  "Line-In (2- SB 5.1 VX)"
+dummy: Immediate exit requested
+
+C:\Users\ManojKumar\Desktop\ffmpeg-20130126-git-c46943e-win32-static\bin>ffmpeg
+-f dshow -list_options true -i video="Logitech HD Webcam C310"
+ffmpeg version N-49352-gc46943e Copyright (c) 2000-2013 the FFmpeg developers
+  built on Jan 26 2013 12:06:49 with gcc 4.7.2 (GCC)
+  configuration: --enable-gpl --enable-version3 --disable-w32threads --enable-av
+isynth --enable-bzlib --enable-fontconfig --enable-frei0r --enable-gnutls --enab
+le-libass --enable-libbluray --enable-libcaca --enable-libfreetype --enable-libg
+sm --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --e
+nable-libopenjpeg --enable-libopus --enable-librtmp --enable-libschroedinger --e
+nable-libspeex --enable-libtheora --enable-libtwolame --enable-libvo-aacenc --en
+able-libvo-amrwbenc --enable-libvorbis --enable-libvpx --enable-libx264 --enable
+-libxavs --enable-libxvid --enable-zlib
+  libavutil      52. 17.100 / 52. 17.100
+  libavcodec     54. 91.100 / 54. 91.100
+  libavformat    54. 61.104 / 54. 61.104
+  libavdevice    54.  3.102 / 54.  3.102
+  libavfilter     3. 34.101 /  3. 34.101
+  libswscale      2.  2.100 /  2.  2.100
+  libswresample   0. 17.102 /  0. 17.102
+  libpostproc    52.  2.100 / 52.  2.100
+[dshow @ 0037a7e0] DirectShow video device options
+[dshow @ 0037a7e0]  Pin "Capture"
+[dshow @ 0037a7e0]   pixel_format=bgr24  min s=640x480 fps=5 max s=640x480 fps=3
+0
+[dshow @ 0037a7e0]   pixel_format=bgr24  min s=160x120 fps=5 max s=160x120 fps=3
+0
+[dshow @ 0037a7e0]   pixel_format=bgr24  min s=176x144 fps=5 max s=176x144 fps=3
+0
+[dshow @ 0037a7e0]   pixel_format=bgr24  min s=320x176 fps=5 max s=320x176 fps=3
+0
+[dshow @ 0037a7e0]   pixel_format=bgr24  min s=320x240 fps=5 max s=320x240 fps=3
+0
+[dshow @ 0037a7e0]   pixel_format=bgr24  min s=352x288 fps=5 max s=352x288 fps=3
+0
+[dshow @ 0037a7e0]   pixel_format=bgr24  min s=432x240 fps=5 max s=432x240 fps=3
+0
+[dshow @ 0037a7e0]   pixel_format=bgr24  min s=544x288 fps=5 max s=544x288 fps=3
+0
+[dshow @ 0037a7e0]   pixel_format=bgr24  min s=640x360 fps=5 max s=640x360 fps=3
+0
+[dshow @ 0037a7e0]   pixel_format=bgr24  min s=752x416 fps=5 max s=752x416 fps=3
+0
+[dshow @ 0037a7e0]   pixel_format=bgr24  min s=800x448 fps=5 max s=800x448 fps=3
+0
+[dshow @ 0037a7e0]   pixel_format=bgr24  min s=800x600 fps=5 max s=800x600 fps=3
+0
+[dshow @ 0037a7e0]   pixel_format=bgr24  min s=864x480 fps=5 max s=864x480 fps=3
+0
+[dshow @ 0037a7e0]   pixel_format=bgr24  min s=960x544 fps=5 max s=960x544 fps=3
+0
+[dshow @ 0037a7e0]   pixel_format=bgr24  min s=960x720 fps=5 max s=960x720 fps=3
+0
+[dshow @ 0037a7e0]   pixel_format=bgr24  min s=1024x576 fps=5 max s=1024x576 fps
+=30
+[dshow @ 0037a7e0]   pixel_format=bgr24  min s=1184x656 fps=5 max s=1184x656 fps
+=30
+[dshow @ 0037a7e0]   pixel_format=bgr24  min s=1280x720 fps=5 max s=1280x720 fps
+=30
+[dshow @ 0037a7e0]   pixel_format=bgr24  min s=1280x960 fps=5 max s=1280x960 fps
+=30
+[dshow @ 0037a7e0]   pixel_format=yuv420p  min s=640x480 fps=5 max s=640x480 fps
+=30
+[dshow @ 0037a7e0]   pixel_format=yuv420p  min s=160x120 fps=5 max s=160x120 fps
+=30
+[dshow @ 0037a7e0]   pixel_format=yuv420p  min s=176x144 fps=5 max s=176x144 fps
+=30
+[dshow @ 0037a7e0]   pixel_format=yuv420p  min s=320x176 fps=5 max s=320x176 fps
+=30
+[dshow @ 0037a7e0]   pixel_format=yuv420p  min s=320x240 fps=5 max s=320x240 fps
+=30
+[dshow @ 0037a7e0]   pixel_format=yuv420p  min s=352x288 fps=5 max s=352x288 fps
+=30
+[dshow @ 0037a7e0]   pixel_format=yuv420p  min s=432x240 fps=5 max s=432x240 fps
+=30
+[dshow @ 0037a7e0]   pixel_format=yuv420p  min s=544x288 fps=5 max s=544x288 fps
+=30
+[dshow @ 0037a7e0]   pixel_format=yuv420p  min s=640x360 fps=5 max s=640x360 fps
+=30
+[dshow @ 0037a7e0]   pixel_format=yuv420p  min s=752x416 fps=5 max s=752x416 fps
+=30
+[dshow @ 0037a7e0]   pixel_format=yuv420p  min s=800x448 fps=5 max s=800x448 fps
+=30
+[dshow @ 0037a7e0]   pixel_format=yuv420p  min s=800x600 fps=5 max s=800x600 fps
+=30
+[dshow @ 0037a7e0]   pixel_format=yuv420p  min s=864x480 fps=5 max s=864x480 fps
+=30
+[dshow @ 0037a7e0]   pixel_format=yuv420p  min s=960x544 fps=5 max s=960x544 fps
+=30
+[dshow @ 0037a7e0]   pixel_format=yuv420p  min s=960x720 fps=5 max s=960x720 fps
+=30
+[dshow @ 0037a7e0]   pixel_format=yuv420p  min s=1024x576 fps=5 max s=1024x576 f
+ps=30
+[dshow @ 0037a7e0]   pixel_format=yuv420p  min s=1184x656 fps=5 max s=1184x656 f
+ps=30
+[dshow @ 0037a7e0]   pixel_format=yuv420p  min s=1280x720 fps=5 max s=1280x720 f
+ps=30
+[dshow @ 0037a7e0]   pixel_format=yuv420p  min s=1280x960 fps=5 max s=1280x960 f
+ps=30
+video=Logitech HD Webcam C310: Immediate exit requested
+
+C:\Users\ManojKumar\Desktop\ffmpeg-20130126-git-c46943e-win32-static\bin>ffmpeg
+-f dshow -s 1280x960 -r 30 -i video="Logitech HD Webcam C310" out3.avi
+ffmpeg version N-49352-gc46943e Copyright (c) 2000-2013 the FFmpeg developers
+  built on Jan 26 2013 12:06:49 with gcc 4.7.2 (GCC)
+  configuration: --enable-gpl --enable-version3 --disable-w32threads --enable-av
+isynth --enable-bzlib --enable-fontconfig --enable-frei0r --enable-gnutls --enab
+le-libass --enable-libbluray --enable-libcaca --enable-libfreetype --enable-libg
+sm --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --e
+nable-libopenjpeg --enable-libopus --enable-librtmp --enable-libschroedinger --e
+nable-libspeex --enable-libtheora --enable-libtwolame --enable-libvo-aacenc --en
+able-libvo-amrwbenc --enable-libvorbis --enable-libvpx --enable-libx264 --enable
+-libxavs --enable-libxvid --enable-zlib
+  libavutil      52. 17.100 / 52. 17.100
+  libavcodec     54. 91.100 / 54. 91.100
+  libavformat    54. 61.104 / 54. 61.104
+  libavdevice    54.  3.102 / 54.  3.102
+  libavfilter     3. 34.101 /  3. 34.101
+  libswscale      2.  2.100 /  2.  2.100
+  libswresample   0. 17.102 /  0. 17.102
+  libpostproc    52.  2.100 / 52.  2.100
+[dshow @ 0207e680] Estimating duration from bitrate, this may be inaccurate
+Input #0, dshow, from 'video=Logitech HD Webcam C310':
+  Duration: N/A, start: 62446.869000, bitrate: N/A
+    Stream #0:0: Video: rawvideo, bgr24, 1280x960, 30 tbr, 10000k tbn, 30 tbc
+Output #0, avi, to 'out3.avi':
+  Metadata:
+    ISFT            : Lavf54.61.104
+    Stream #0:0: Video: mpeg4 (FMP4 / 0x34504D46), yuv420p, 1280x960, q=2-31, 20
+0 kb/s, 30 tbn, 30 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo -> mpeg4)
+Press [q] to stop, [?] for help
+frame=    9 fps=0.0 q=15.5 size=     292kB time=00:00:00.30 bitrate=7963.0kbits/
+frame=   17 fps= 17 q=31.0 size=     342kB time=00:00:00.56 bitrate=4946.6kbits/
+frame=   26 fps= 17 q=31.0 size=     388kB time=00:00:00.86 bitrate=3665.2kbits/
+frame=   34 fps= 17 q=31.0 size=     419kB time=00:00:01.13 bitrate=3026.7kbits/
+frame=   42 fps= 17 q=31.0 size=     466kB time=00:00:01.40 bitrate=2728.0kbits/
+frame=   50 fps= 17 q=31.0 size=     515kB time=00:00:01.66 bitrate=2532.5kbits/
+frame=   58 fps= 16 q=31.0 size=     558kB time=00:00:01.93 bitrate=2362.7kbits/
+frame=   67 fps= 17 q=31.0 size=     662kB time=00:00:02.23 bitrate=2427.9kbits/
+frame=   75 fps= 16 q=31.0 size=     751kB time=00:00:02.50 bitrate=2462.3kbits/
+frame=   83 fps= 16 q=24.8 size=     841kB time=00:00:02.76 bitrate=2489.3kbits/
+frame=   91 fps= 16 q=31.0 size=     910kB time=00:00:03.03 bitrate=2457.3kbits/
+frame=   99 fps= 16 q=24.8 size=     970kB time=00:00:03.30 bitrate=2406.8kbits/
+frame=  108 fps= 16 q=31.0 size=    1009kB time=00:00:03.60 bitrate=2297.0kbits/
+frame=  116 fps= 16 q=31.0 size=    1056kB time=00:00:03.86 bitrate=2236.5kbits/
+frame=  124 fps= 16 q=31.0 size=    1097kB time=00:00:04.13 bitrate=2174.6kbits/
+frame=  132 fps= 16 q=31.0 size=    1123kB time=00:00:04.40 bitrate=2090.5kbits/
+frame=  140 fps= 16 q=31.0 size=    1158kB time=00:00:04.66 bitrate=2032.4kbits/
+frame=  148 fps= 16 q=31.0 size=    1191kB time=00:00:04.93 bitrate=1977.5kbits/
+frame=  152 fps= 16 q=31.0 Lsize=    1199kB time=00:00:05.06 bitrate=1938.0kbits
+/s
+video:1189kB audio:0kB subtitle:0 global headers:0kB muxing overhead 0.772665%
+
+C:\Users\ManojKumar\Desktop\ffmpeg-20130126-git-c46943e-win32-static\bin>
