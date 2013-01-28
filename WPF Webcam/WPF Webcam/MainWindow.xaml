@@ -1,0 +1,18 @@
+﻿<Window x:Class="WPF_Webcam.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:cam="clr-namespace:WebcamControl;assembly=WebcamControl"
+    Title="WPF Webcam" Height="495" Width="353">
+    <Grid>
+        <cam:Webcam Name="WebCamCtrl" Margin="12,12,12,204"></cam:Webcam>        
+        <ComboBox Height="22" HorizontalAlignment="Left" Margin="104,269,0,0" Name="VidDvcsComboBox" VerticalAlignment="Top" Width="210" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="105,302,0,0" Name="AudDvcsComboBox" VerticalAlignment="Top" Width="209" />
+        <Button Content="Start Recording" Height="24" HorizontalAlignment="Left" Margin="51,380,0,0" Name="RecordButton" VerticalAlignment="Top" Width="115" Click="RecordButton_Click" />
+        <Button Content="Stop Recording" Height="24" HorizontalAlignment="Right" Margin="0,380,51,0" Name="StopRecordButton" VerticalAlignment="Top" Width="112" Click="StopRecordButton_Click" />
+        <TextBlock Height="22" HorizontalAlignment="Left" Margin="28,272,0,0" Name="TextBlock1" Text="Video Device" VerticalAlignment="Top" Width="78" TextAlignment="Left" FlowDirection="LeftToRight" />
+        <TextBlock FlowDirection="LeftToRight" Height="22" HorizontalAlignment="Left" Margin="28,307,0,0" Name="TextBlock2" Text="Audio Device" TextAlignment="Left" VerticalAlignment="Top" Width="78" />
+        <Button Content="End Capture" Height="24" HorizontalAlignment="Right" Margin="0,341,51,0" Name="EndButton" VerticalAlignment="Top" Width="112" Click="EndButton_Click" />
+        <Button Content="Start Capture" Height="24" HorizontalAlignment="Left" Margin="51,341,0,0" Name="StartButton" VerticalAlignment="Top" Width="115" Click="StartButton_Click" />
+        <Button Content="Take Snapshot" Height="24" HorizontalAlignment="Left" Margin="109,417,0,0" Name="SnapshotButton" VerticalAlignment="Top" Width="120" Click="SnapshotButton_Click" />
+    </Grid>
+</Window>
