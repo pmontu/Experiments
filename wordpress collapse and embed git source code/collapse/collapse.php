@@ -34,11 +34,12 @@ function collapse_css() {
 
 add_action( 'admin_head', 'collapse_css' );
 
-function collapse_js() {
-    echo '<script type="text/javascript" src="'.plugins_url('collapse.js',__FILE__).'"></script>';
+function my_scripts_method() {
+	wp_enqueue_script(
+		'collapse',
+		plugins_url('collapse.js',__FILE__),
+		array('jquery')
+	);
 }
-
-// Add hook for front-end <head></head>
-add_action('wp_head', 'collapse_js');
-
+add_action('wp_enqueue_scripts', 'my_scripts_method');
 ?>
