@@ -34,4 +34,11 @@ function collapse_css() {
 
 add_action( 'admin_head', 'collapse_css' );
 
+function collapse_js() {
+    echo '<script type="text/javascript" src="'.plugins_url('collapse.js',__FILE__).'"></script>';
+}
+
+// Add hook for front-end <head></head>
+add_action('wp_head', 'collapse_js');
+
 ?>
