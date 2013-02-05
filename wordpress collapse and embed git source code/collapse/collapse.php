@@ -18,10 +18,9 @@ function github_func( $atts ) {
 	$raw = str_replace(array("https://","/blob/"),array("https://raw.","/"),$url);
 	if (strlen($raw) > 0){
 		$contents = file_get_contents($raw);
-		return "<pre>".htmlentities($contents,ENT_IGNORE, "UTF-8")
-		."<br><a href='$url'>$name</a></pre>";
+		return htmlentities($contents,ENT_IGNORE, "UTF-8");
+		//."<br><a href='$url'>$name</a>";
 	}
 }
 add_shortcode( 'github', 'github_func' );
-
 ?>
