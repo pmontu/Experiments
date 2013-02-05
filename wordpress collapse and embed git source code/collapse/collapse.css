@@ -1,0 +1,12 @@
+.collapse-open span {
+    background:url(minus.png);
+    display:block;
+    float:right;
+    padding:10px; 
+}
+.collapse-close span {
+    background:url(plus.png);
+    display:block;
+    float:right;
+    padding:10px;
+ }
